@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.corpo_forum{
+    margin: 20px auto auto auto;
+    padding: 20px;
+    width: 1000px;
+    font: 11px tahoma;
+    background-color: rgb(220, 220, 220);
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.logo{
+    width: 220px;
+}
+
+.rodape{
+    margin: 3px auto auto auto;
+    padding: 20px;
+    width: 1000px;
+    background-color: black;
+    color: white;
+    font: 0.7em tahoma;
+    border-radius: 10px;
+    text-align: center;
+}
