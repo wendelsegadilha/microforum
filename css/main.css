@@ -31,6 +31,28 @@ input[type="submit"]{
     padding: 5px;
 }
 
+.erro{
+    margin: 20px auto;
+    color: red;
+    font: bold 12px Tahoma;
+    text-align: center;
+    width: 600px;
+    padding: 5px;
+    border: 1px solid rgb(170, 170, 170);
+}
+
+.registro_sucesso{
+    margin: 30px auto;
+    padding: 20px;
+    color:black;
+    font: 11px Tahoma;
+    text-align: center;
+    width: 300px;
+    background-color: rgb(200, 200, 200);
+    border: 2px groove rgb(170, 170, 170);
+    border-radius: 10px;
+}
+
 .rodape{
     margin: 3px auto auto auto;
     padding: 20px;
