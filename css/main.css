@@ -7,7 +7,7 @@
     margin: 20px auto auto auto;
     padding: 20px;
     width: 1000px;
-    font: 11px tahoma;
+    font: 11px Tahoma;
     background-color: rgb(220, 220, 220);
     text-align: left;
     border: 1px solid black;
@@ -16,6 +16,19 @@
 
 .logo{
     width: 220px;
+}
+
+.form_login, .form_registro{
+    width: 400px;
+    border: 1px solid black;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+input[type="submit"]{
+    width: 120px;
+    padding: 5px;
 }
 
 .rodape{
