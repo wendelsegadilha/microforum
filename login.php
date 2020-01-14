@@ -2,7 +2,7 @@
 
 //FORMULÁRIO DE LOGIN
 echo '
-    <form class="form_login" method="post" action="login.php">
+    <form class="form_login" method="post" action="login_verificacao.php">
     
     <h3>Login<br><hr></h3>
     Para ter acesso ao fórum é necessário possuir uma conta de usuário.<br>

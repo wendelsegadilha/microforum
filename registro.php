@@ -1,10 +1,8 @@
 <?php
 
 //PÁGINA PRINCIPAL
-$id_sessao = session_id();
-if (empty($id_sessao)) {
-    session_start();
-}
+session_start();
+unset($_SESSION['usuario']);
 
 //-------------------------------------------------------------------------
 //CABEÇALHO

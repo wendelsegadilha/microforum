@@ -41,7 +41,7 @@ input[type="submit"]{
     border: 1px solid rgb(170, 170, 170);
 }
 
-.registro_sucesso{
+.registro_sucesso, .login_sucesso{
     margin: 30px auto;
     padding: 20px;
     color:black;
@@ -51,6 +51,14 @@ input[type="submit"]{
     background-color: rgb(200, 200, 200);
     border: 2px groove rgb(170, 170, 170);
     border-radius: 10px;
+}
+
+.mensagem{
+    margin: 30px auto;
+    text-align: center;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid black;
 }
 
 .rodape{
