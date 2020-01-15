@@ -56,11 +56,12 @@ if ($stmt->rowCount() == 0) {
 }else{
     
     //DINIÇÃO DOS DADOS DA SESSÃO
-    $_SESSION['usuario'] = $stmt->fetch(PDO::FETCH_ASSOC)['nome_usuario'];
-    $_SESSION['avatar'] =  $stmt->fetch(PDO::FETCH_ASSOC)['avatar_usuario'];
+    $usuario_logado = $stmt->fetch(PDO::FETCH_ASSOC);
+    $_SESSION['usuario'] = $usuario_logado['nome_usuario'];
+    $_SESSION['avatar'] =  $usuario_logado['avatar_usuario'];
     echo '<div class="login_sucesso">
     Bem-vindo ao fórum, <strong>'.$_SESSION['usuario'].'</strong>.<br><br>
-    Clique <a href="forum.php">aqui</a> para Continuar.
+    Clique <a href="forum.php">aqui</a> para continuar.
     </div>';
 
 }

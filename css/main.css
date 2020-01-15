@@ -61,6 +61,23 @@ input[type="submit"]{
     border: 1px solid black;
 }
 
+.dados_usuario{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+.dados_usuario img{
+    width: 30px;
+    height: 30px;
+}
+
+.dados_usuario span{
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
 .rodape{
     margin: 3px auto auto auto;
     padding: 20px;
