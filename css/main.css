@@ -78,6 +78,66 @@ input[type="submit"]{
     margin-left: 5px;
 }
 
+.postagens{
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 20px;
+    background-color: rgb(240, 240, 240);
+}
+
+.postagens img{
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+
+.postagens #autor{
+    margin-left: 5px;
+    font:12px Tahoma;
+}
+
+.postagens #titulo{
+    margin-left: 35px;
+    margin-top: 5px;
+    font: bold 14px Tahoma;
+    display: block;
+    color: rgb(100, 100, 100);
+}
+
+.postagens #mensagem{
+    padding: 10px 0 10px 35px;
+    font: 12px Tahoma;
+}
+
+.postagens #data_hora{
+    font: 10px Tahoma;
+    float: right;
+    color: rgb(150, 150, 150);
+}
+
+.nova_postagem{
+    background-color: rgb(228, 58, 58);
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    padding-right: 0px;
+    text-align: right;
+    border-radius: 5px;
+}
+
+.nova_postagem a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nova_postagem a:hover{
+    background-color: rgb(177, 46, 46);
+    padding: 10px;
+    border-radius: 5px;
+}
+
 .rodape{
     margin: 3px auto auto auto;
     padding: 20px;
