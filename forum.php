@@ -30,7 +30,7 @@ echo '
 
 //NOVA POSTAGEM
 echo '<div class="nova_postagem">
-        <a href="novo_postagem.php">Nova Postagem</a>
+        <a href="editor_postagem.php">Nova Postagem</a>
       </div>    
 ';
 
@@ -66,10 +66,16 @@ echo '<div class="nova_postagem">
             echo '<div class="postagens">';
             echo '<img src="images/avatares/'.$avatar_usuario.'">';
             echo '<span id="autor">Autor: <strong>'.$nome_usuario.'</strong></span>';
-            echo '<span id="titulo">'.utf8_encode($titulo_postagem).'</span>';
+            echo '<span id="titulo">'.$titulo_postagem.'</span>';
             echo '<hr>';
-            echo '<div id="mensagem">'.utf8_encode($mensagem_postagem).'</div>';
-            echo '<span id="data_hora">'.$data_postagem.'</span>';
+            echo '<div id="mensagem">'.$mensagem_postagem.'</div>';
+            echo '<div id="data_hora">';
+            //FUNÇÃO EDITAR POSTAGEM PARA USUÁRIO ATIVO
+            if ($id_usuario == $_SESSION['id_usuario']) {
+                echo '<a href="editor_postagem.php?idpostagem='.$id_postagem.'">Editar<a/>';
+            }
+            echo ' '.$data_postagem.' #'.$id_postagem;
+            echo '</div>';
             echo  '</div>';
 
         }

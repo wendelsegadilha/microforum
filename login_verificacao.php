@@ -57,6 +57,7 @@ if ($stmt->rowCount() == 0) {
     
     //DINIÇÃO DOS DADOS DA SESSÃO
     $usuario_logado = $stmt->fetch(PDO::FETCH_ASSOC);
+    $_SESSION['id_usuario'] = $usuario_logado['id_usuario'];
     $_SESSION['usuario'] = $usuario_logado['nome_usuario'];
     $_SESSION['avatar'] =  $usuario_logado['avatar_usuario'];
     echo '<div class="login_sucesso">

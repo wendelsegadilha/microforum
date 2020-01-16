@@ -138,6 +138,14 @@ input[type="submit"]{
     border-radius: 5px;
 }
 
+.form_postagem{
+    width: 700px;
+    border: 1px solid black;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
+}
+
 .rodape{
     margin: 3px auto auto auto;
     padding: 20px;
