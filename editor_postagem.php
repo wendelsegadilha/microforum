@@ -38,8 +38,13 @@ if(isset($_REQUEST['idpostagem'])){
     $postagem = $stmt->fetch(PDO::FETCH_ASSOC);
     $conexao = null;
     
-    $titulo_postagem = $postagem['titulo_postagem'];
-    $mensagem_postagem = $postagem['mensagem_postagem'];
+    if($_SESSION['id_usuario'] == $postagem['id_usuario']){
+        $titulo_postagem = $postagem['titulo_postagem'];
+        $mensagem_postagem = $postagem['mensagem_postagem'];
+    }else{
+        header("Location: forum.php");
+    }
+    
 }
 
 
@@ -49,6 +54,7 @@ if(isset($_REQUEST['idpostagem'])){
 echo '
     <div class="dados_usuario">
         <img src="images/avatares/'.$_SESSION['avatar'].'">
+        Informações usuário ativo:<br>
         Usuário:<span>'.ucfirst($_SESSION['usuario']).'</span> | 
         <a href="sair.php">Sair</a>
     </div>

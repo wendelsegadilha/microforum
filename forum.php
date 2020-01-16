@@ -23,6 +23,7 @@ include 'cabecalho.php';
 echo '
     <div class="dados_usuario">
         <img src="images/avatares/'.$_SESSION['avatar'].'">
+        Informações usuário ativo:<br>
         Usuário:<span>'.ucfirst($_SESSION['usuario']).'</span> | 
         <a href="sair.php">Sair</a>
     </div>
