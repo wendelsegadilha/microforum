@@ -146,6 +146,11 @@ input[type="submit"]{
     text-align: left;
 }
 
+.totais{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 .rodape{
     margin: 3px auto auto auto;
     padding: 20px;

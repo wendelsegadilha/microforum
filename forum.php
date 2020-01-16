@@ -80,6 +80,29 @@ echo '<div class="nova_postagem">
 
         }
     }
+//-------------------------------------------------------------------------
+//EXIBIÇÃO DE ESTATITICAS DO FORUM
+
+//BUSCANDO TOTAL DE USUÁRIOS
+$conexao = new PDO("mysql:dbname=$banco_dados;host=$servidor", $usuario, $senha);
+$stmt = $conexao->prepare("SELECT id_usuario FROM usuarios");
+$stmt->execute();
+$numero_usuarios = $stmt->rowCount();
+if($numero_usuarios == null) $numero_usuarios = 0;
+
+//BUSCANDO TOTAL DEpostagens POSTAGENS
+$conexao = new PDO("mysql:dbname=$banco_dados;host=$servidor", $usuario, $senha);
+$stmt = $conexao->prepare("SELECT id_postagem FROM postagens");
+$stmt->execute();
+$numero_postagens = $stmt->rowCount();
+if($numero_postagens == null) $numero_postagens = 0;
+
+//MOSTRAR OS DADOS
+echo '
+    <div class="totais">
+        Número de usuários registrados: <strong>'.$numero_usuarios.'</strong> | Número total de postagens: <strong>'.$numero_postagens.'</strong>
+    </div>
+';
 
 //-------------------------------------------------------------------------
 //RODAPÉ
